@@ -20,7 +20,7 @@ The tag can also be called with the variable attribute, which will set a variabl
 Notes:
 ------
 
-The tag was developed to address issues moving a site behind a hardware load balancer. With this move the value originaly available in CGI.REMOTE_ADDR was placed in the X-Forwarded-For header. To get this value, this tag uses the last value in the X-Forwarded-For header if multiple values are present as this is the value that was previously available in CGI.REMOTE_ADDR. This may not be the original client IP.
+The tag was developed to address issues moving a ColdFusion site hosted on IIS behind a hardware load balancer. With this move the value originaly available in CGI.REMOTE_ADDR was placed in the X-Forwarded-For header. To get this value, this tag uses the last value in the X-Forwarded-For header if multiple values are present as this is the value that was previously available in CGI.REMOTE_ADDR. This may not be the original client IP.git 
 
 
 
