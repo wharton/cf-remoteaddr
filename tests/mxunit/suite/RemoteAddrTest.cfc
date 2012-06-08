@@ -29,7 +29,7 @@
 			<cfhttpparam type="header" name="X-Forwarded-For" value="1.1.1.1, 2.2.2.2" />
 		</cfhttp>
 		<cfset debug(result) />
-		<cfset assertEquals("1.1.1.1 (Request Scope)",trim(result.filecontent))/>
+		<cfset assertEquals("2.2.2.2 (Request Scope)",trim(result.filecontent))/>
 	</cffunction>
 
 	<cffunction name="testNoHeaderVariablesScope">
@@ -58,7 +58,7 @@
 			<cfhttpparam type="header" name="X-Forwarded-For" value="1.1.1.1, 2.2.2.2" />
 		</cfhttp>
 		<cfset debug(result) />
-		<cfset assertEquals("1.1.1.1 (Variables Scope)",trim(result.filecontent))/>
+		<cfset assertEquals("2.2.2.2 (Variables Scope)",trim(result.filecontent))/>
 	</cffunction>
 	
 </cfcomponent>
