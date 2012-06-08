@@ -2,9 +2,9 @@
 
 	<cffunction name="beforeTests">
 		<!--- the path to the test harness on your server --->
-		<cfset variables.testHarnessUrl = "http://scorpio-dev.wharton.upenn.edu/users/nmische/remoteaddr/tests/mxunit/testharness.cfm" />
+		<cfset variables.testHarnessUrl = "http://www.example.com/remoteaddr/tests/mxunit/testharness.cfm" />
 		<!--- your server's ip address --->
-		<cfset varialbes.serverIp = "172.16.1.156" />
+		<cfset varialbes.serverIp = "127.0.0.1" />
 	</cffunction>	
 
 	<cffunction name="testNoHeaderRequestScope">
